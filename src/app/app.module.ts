@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,7 @@ import { FocusDirective } from './directives/focus.directive';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,10 +33,13 @@ import { NavigationComponent } from './components/navigation/navigation.componen
   ],
   imports: [
     BrowserModule,
+    MatButtonModule,
+    MatInputModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

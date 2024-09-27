@@ -5,7 +5,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 const routes: Routes = [
   { path: '', component: ProductPageComponent },
-  { path: 'about', component: AboutPageComponent }
+  { path: 'github-search', component: AboutPageComponent }
 ];
 
 @NgModule({

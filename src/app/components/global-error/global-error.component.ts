@@ -7,11 +7,12 @@ import { ErrorService } from 'src/app/services/error.service';
   styleUrls: ['./global-error.component.scss']
 })
 export class GlobalErrorComponent implements OnInit {
+
   constructor(
     public errorService: ErrorService
   ){}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    throw this.errorService.handle('Method not implemented.');
   }
 }

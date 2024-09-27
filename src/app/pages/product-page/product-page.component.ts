@@ -8,6 +8,7 @@ import { ProductService } from 'src/app/services/products.service';
   styleUrls: ['./product-page.component.scss']
 })
 export class ProductPageComponent implements OnInit {
+   
   title = 'angular app';
   loading = false;
   term: string = '';
